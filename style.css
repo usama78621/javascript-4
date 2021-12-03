@@ -1,0 +1,84 @@
+:root{
+    --color-1:#2f3240;
+}
+body{
+    background-color: #e8eef3;
+    font-family: sans-serif;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+
+}
+.header{
+background-color:var(--color-1);
+padding: 12px 0px;
+line-height: 1.5;
+}
+.logo a{
+     font-size: 30px;
+     font-family: sans-serif;
+     color: white;
+     text-transform: capitalize;
+     
+    
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.header .nav ul li{
+    display: inline-block;
+    margin-left: 40px;
+}
+.header .nav ul li a{
+    font-size: 18px;
+    display: block;
+    text-transform: capitalize;
+    color: white;
+    padding: 10px 0px;
+    transition: all 0.5 ease;
+}
+
+.header .nav ul li a.active,
+.header .nav ul li a:hover{
+    color: tomato;
+}
+.nav-toggler{
+    font-size: 25px;
+    color: #ffffff;
+    cursor: pointer;
+    display: none;
+}
+@media screen and (max-width: 900px){
+    .nav-toggle{
+        display: block;
+    
+    }
+ .header .nav{
+    width: 100%; 
+    padding: 0;
+} 
+.header .nav ul {
+    margin-top: 15px;
+    padding: 12px 15px 0px;
+    border-top: 1px solid rgb(255, 255, 255,0.2);
+}
+
+.header .nav ul li {
+    display: block;
+    margin: 0;
+}
+    
+}
